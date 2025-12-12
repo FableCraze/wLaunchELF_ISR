@@ -2,8 +2,7 @@
 #include "Lang/SPA.LNG"
 #endif
 
-//#ifdef WLE_LANG_ENG
-#define CUSTOM_LNG
+#ifndef CUSTOM_LNG
 #include "Lang/ENG.LNG"
 #endif
 
