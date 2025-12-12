@@ -79,6 +79,16 @@ jobs:
         files: |
                WLE/*.ELF
 
+    - name: Create release
+      if: github.ref == 'refs/heads/master'
+      uses: marvinpinto/action-automatic-releases@latest
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        automatic_release_tag: "language-files"
+        title: "Translations"
+        files: |
+               Lang/*.LNG
+
   trigger-auto-update:
     if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
