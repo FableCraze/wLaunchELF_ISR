@@ -3,10 +3,10 @@
 #endif
 
 //#ifdef WLE_LANG_ENG
-//#define CUSTOM_LNG
-//#include "Lang/ENG.LNG"
-//#endif
+#define CUSTOM_LNG
+#include "Lang/ENG.LNG"
+#endif
 
 #ifndef CUSTOM_LNG
-#include "Lang/ENG.LNG"
+#include "Lang/PTBR.LNG"
 #endif
