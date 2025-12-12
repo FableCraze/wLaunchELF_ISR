@@ -3,7 +3,7 @@
 #endif
 
 //#ifdef WLE_LANG_ENG
-#define CUSTOM_LNG
+#ifdef CUSTOM_LNG
 #include "Lang/PTBR.LNG"
 #endif
 
