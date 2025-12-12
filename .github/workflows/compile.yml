@@ -95,7 +95,7 @@ jobs:
     needs: [release]
     strategy:
       matrix:
-        repos: [FableCraze/Ps2NEO]
+        repos: [israpps/FreeMcBoot-Installer, israpps/Funtuna-Fork , israpps/PlayStation2-Basic-BootLoader]
     steps:
     - name: trigger israpps auto-update system
       if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
